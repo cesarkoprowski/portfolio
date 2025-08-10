@@ -1,8 +1,16 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+const repoName = "portfolio";
+
 const nextConfig: NextConfig = {
-  /* config options here */
-  devIndicators: false
+  devIndicators: false,
+
+  basePath: isProd ? `/${repoName}` : "",
+  assetPrefix: isProd ? `/${repoName}/` : "",
+  trailingSlash: true,
+
+  output: "export",
 };
 
 export default nextConfig;

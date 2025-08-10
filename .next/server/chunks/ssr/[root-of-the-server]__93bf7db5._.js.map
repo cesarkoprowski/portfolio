@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 6, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"","debugId":null}},
-    {"offset": {"line": 18, "column": 0}, "map": {"version":3,"sources":["file:///C:/Users/cesar/github/portfolio/app/page.tsx"],"sourcesContent":["import { Button } from \"@/components/ui/button\";\nimport Image from \"next/image\";\n\nexport const metadata = {\n  title: \"Cesk.\",\n};\n\nexport default function Home() {\n  return (\n    <div className=\"h-screen bg-[url('/gradient_bg.png')] bg-cover bg-center flex justify-center items-center\">\n      <Image src=\"/logo.png\" alt=\"Logo\" height={200} width={200} />\n    </div>\n  );\n}\n"],"names":[],"mappings":";;;;;AACA;;;AAEO,MAAM,WAAW;IACtB,OAAO;AACT;AAEe,SAAS;IACtB,qBACE,6WAAC;QAAI,WAAU;kBACb,cAAA,6WAAC,4PAAA,CAAA,UAAK;YAAC,KAAI;YAAY,KAAI;YAAO,QAAQ;YAAK,OAAO;;;;;;;;;;;AAG5D","debugId":null}}]
-}

@@ -22,3 +22,26 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Next.js build output
+.next/
+out/
+
+# Dependências do pnpm
+.pnp.*
+.pnpm-debug.log*
+
+# Sistema operacional
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Ambiente local
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Cache do Editor
+*.code-workspace
+
