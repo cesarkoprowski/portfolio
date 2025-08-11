@@ -26,12 +26,12 @@ const MySidebar = () => {
             className={cn(
               "text-white cursor-pointer transition-all duration-300 hover:bg-transparent",
               isOpen &&
-                "bg-[url('/assets/logo.png')] bg-cover bg-center bg-no-repeat rounded-md w-27"
+                "bg-[url('/logo.png')] bg-cover bg-center bg-no-repeat rounded-md w-27"
             )}
           >
             {!isOpen && (
               <img
-                src="/assets/simple_logo.png"
+                src="/simple_logo.png"
                 alt="Logo"
                 className="w-6 h-6 object-contain"
                 draggable={false}

@@ -1,7 +1,12 @@
 {
   "version": 4,
   "routes": {
-    "/": {
+    "/favicon.ico": {
+      "initialHeaders": {
+        "cache-control": "public, max-age=0, must-revalidate",
+        "content-type": "image/x-icon",
+        "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
+      },
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -14,8 +19,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
+      "srcRoute": "/favicon.ico",
+      "dataRoute": null,
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -49,12 +54,7 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/favicon.ico": {
-      "initialHeaders": {
-        "cache-control": "public, max-age=0, must-revalidate",
-        "content-type": "image/x-icon",
-        "x-next-cache-tags": "_N_T_/layout,_N_T_/favicon.ico/layout,_N_T_/favicon.ico/route,_N_T_/favicon.ico"
-      },
+    "/": {
       "experimentalBypassFor": [
         {
           "type": "header",
@@ -67,8 +67,8 @@
         }
       ],
       "initialRevalidateSeconds": false,
-      "srcRoute": "/favicon.ico",
-      "dataRoute": null,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
       "allowHeader": [
         "host",
         "x-matched-path",
@@ -82,8 +82,8 @@
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "9a69d47afc47f54db412adacc06912f8",
-    "previewModeSigningKey": "eedfad84e9f190adb039d0d65b401737502c84eb680260f66d01cf79661ea209",
-    "previewModeEncryptionKey": "b918ea42b93bce68b121ee7168f2058c5859090b5f24eee9c610cff9dc0a8cf1"
+    "previewModeId": "14fd390f760048de84d79dbce9c85c37",
+    "previewModeSigningKey": "9574abba140e6a5b47de656b6712dbe303229626ad97c7bbca83496f4e633bf1",
+    "previewModeEncryptionKey": "623957cf2f2c5e069ddcec49de605f0442120960e52738937cc4966cac1b6261"
   }
 }
