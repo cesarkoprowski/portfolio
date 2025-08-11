@@ -5,12 +5,11 @@ const repoName = "portfolio";
 
 const nextConfig: NextConfig = {
   devIndicators: false,
-
-  basePath: isProd ? `/${repoName}` : "",
-  assetPrefix: isProd ? `/${repoName}/` : "",
   trailingSlash: true,
-
   output: "export",
+  images: {
+    unoptimized: true,
+  },
 };
 
 export default nextConfig;
