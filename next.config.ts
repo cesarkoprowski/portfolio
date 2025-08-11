@@ -9,8 +9,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   distDir: "docs",
-  basePath: process.env.NODE_ENV === "production" ? `/${repoName}` : "",
-  assetPrefix: process.env.NODE_ENV === "production" ? `/${repoName}/` : "",
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
 };
 
 export default nextConfig;
