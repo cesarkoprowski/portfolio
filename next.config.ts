@@ -3,14 +3,14 @@ import type { NextConfig } from "next";
 const repoName = "portfolio";
 
 const nextConfig: NextConfig = {
-  devIndicators: false,
   output: "export",
+  distDir: "docs/portfolio",
+  basePath: `/${repoName}`,
+  assetPrefix: `/${repoName}/`,
   images: {
     unoptimized: true,
   },
-  distDir: "docs",
-  basePath: "",
-  assetPrefix: "",
+  devIndicators: false,
 };
 
 export default nextConfig;
