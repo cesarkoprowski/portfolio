@@ -25,7 +25,7 @@ dist-ssr
 
 # Next.js build output
 .next/
-out/
+scripts/
 
 # Dependências do pnpm
 .pnp.*
