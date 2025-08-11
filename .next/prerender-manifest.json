@@ -30,30 +30,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/base": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/base",
-      "dataRoute": "/base.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/": {
       "experimentalBypassFor": [
         {
@@ -77,13 +53,37 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/base": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/base",
+      "dataRoute": "/base.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "d6482d378d58a32fbb751e374b0f5688",
-    "previewModeSigningKey": "275c2c232f72d95d4cf46b93614a04ba306fc30814872211db78a888ab685f97",
-    "previewModeEncryptionKey": "80ae957bf51b71f3005d12f82fa46aaca53d692308fc71b7eec438f08d60d8df"
+    "previewModeId": "f05e07af1d32c5376d9a92476dd5ad2c",
+    "previewModeSigningKey": "56e423028b9f3bec6d5d2972b3ad81c31ef045d49f5a3248dde4d3e771b4901f",
+    "previewModeEncryptionKey": "54971632cb6698eb7e31d98bccc85b7c6316b54b6db10f84da2bf3bfc94fdc2e"
   }
 }

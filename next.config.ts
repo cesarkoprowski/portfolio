@@ -9,8 +9,8 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   distDir: "docs",
-  basePath: `/${repoName}`,
-  assetPrefix: `/${repoName}/`,
+  basePath: "",
+  assetPrefix: "",
 };
 
 export default nextConfig;
