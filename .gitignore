@@ -32,6 +32,8 @@ scripts/
 # Dependências do pnpm
 .pnp.*
 .pnpm-debug.log*
+pnpm-lock.yaml
+pnpm-workspace.yaml
 
 # Sistema operacional
 Thumbs.db
