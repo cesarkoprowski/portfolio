@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { Menu, Home, FolderGit } from "lucide-react";
+import { Home, FolderGit } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -26,12 +26,12 @@ const MySidebar = () => {
             className={cn(
               "text-white cursor-pointer transition-all duration-300 hover:bg-transparent",
               isOpen &&
-                "bg-[url('/logo.png')] bg-cover bg-center bg-no-repeat rounded-md w-27"
+                "bg-[url('/portfolio_teste/logo.png')] bg-cover bg-center bg-no-repeat rounded-md w-27"
             )}
           >
             {!isOpen && (
               <img
-                src="/simple_logo.png"
+                src="/portfolio_teste/simple_logo.png"
                 alt="Logo"
                 className="w-6 h-6 object-contain"
                 draggable={false}
@@ -44,13 +44,13 @@ const MySidebar = () => {
           <SidebarItem
             icon={<Home size={20} />}
             label="Home"
-            href="/"
+            href="/portfolio_teste"
             isOpen={isOpen}
           />
           <SidebarItem
             icon={<FolderGit size={20} />}
             label="Projects"
-            href="/config"
+            href="/portfolio_teste/config"
             isOpen={isOpen}
           />
         </nav>
