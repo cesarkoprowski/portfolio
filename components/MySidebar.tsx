@@ -31,7 +31,7 @@ const MySidebar = () => {
           >
             {!isOpen && (
               <img
-                src="/simple_logo.png"
+                src="./simple_logo.png"
                 alt="Logo"
                 className="w-6 h-6 object-contain"
                 draggable={false}
