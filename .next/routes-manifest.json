@@ -2,15 +2,15 @@
   "version": 3,
   "pages404": true,
   "caseSensitive": false,
-  "basePath": "/portfolio",
+  "basePath": "/portfolio_teste",
   "redirects": [
     {
-      "source": "/portfolio/",
-      "destination": "/portfolio",
+      "source": "/portfolio_teste/",
+      "destination": "/portfolio_teste",
       "basePath": false,
       "internal": true,
       "statusCode": 308,
-      "regex": "^/portfolio/$"
+      "regex": "^/portfolio_teste/$"
     },
     {
       "source": "/:path+/",

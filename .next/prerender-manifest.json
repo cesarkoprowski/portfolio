@@ -30,30 +30,6 @@
         "x-next-revalidate-tag-token"
       ]
     },
-    "/": {
-      "experimentalBypassFor": [
-        {
-          "type": "header",
-          "key": "Next-Action"
-        },
-        {
-          "type": "header",
-          "key": "content-type",
-          "value": "multipart/form-data;.*"
-        }
-      ],
-      "initialRevalidateSeconds": false,
-      "srcRoute": "/",
-      "dataRoute": "/index.rsc",
-      "allowHeader": [
-        "host",
-        "x-matched-path",
-        "x-prerender-revalidate",
-        "x-prerender-revalidate-if-generated",
-        "x-next-revalidated-tags",
-        "x-next-revalidate-tag-token"
-      ]
-    },
     "/base": {
       "experimentalBypassFor": [
         {
@@ -77,13 +53,37 @@
         "x-next-revalidated-tags",
         "x-next-revalidate-tag-token"
       ]
+    },
+    "/": {
+      "experimentalBypassFor": [
+        {
+          "type": "header",
+          "key": "Next-Action"
+        },
+        {
+          "type": "header",
+          "key": "content-type",
+          "value": "multipart/form-data;.*"
+        }
+      ],
+      "initialRevalidateSeconds": false,
+      "srcRoute": "/",
+      "dataRoute": "/index.rsc",
+      "allowHeader": [
+        "host",
+        "x-matched-path",
+        "x-prerender-revalidate",
+        "x-prerender-revalidate-if-generated",
+        "x-next-revalidated-tags",
+        "x-next-revalidate-tag-token"
+      ]
     }
   },
   "dynamicRoutes": {},
   "notFoundRoutes": [],
   "preview": {
-    "previewModeId": "0b734f45e5656dea2bb00f36cb290c08",
-    "previewModeSigningKey": "a29b057d495dc82522333d5330d6eea375c9dbf8553e331d093265d5a6be33c2",
-    "previewModeEncryptionKey": "70b1d765c167b270e39282de280997e0686baa5433cde35be5f174a69c0cc63a"
+    "previewModeId": "a1e62603ef04385b42ddc35e93740071",
+    "previewModeSigningKey": "fc1970290e55bb9371aadcd2fdc549b5709627a6fe1e53c53d5410420990a631",
+    "previewModeEncryptionKey": "fb828b18c510fa7aa3a1081370119bfff75e3e565ba9e93a59fb63f1e6a91e05"
   }
 }
