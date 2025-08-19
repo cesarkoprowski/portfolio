@@ -8,7 +8,7 @@
     "dev": "next dev --turbopack",
     "build": "next build && node -e \"require('fs').writeFileSync('./out/.nojekyll', '')\"",
     "predeploy": "pnpm run build",
-    "deploy": "gh-pages -d out"
+    "deploy": "gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.1.15",
