@@ -6,7 +6,7 @@
     "start": "next start",
     "lint": "next lint",
     "dev": "next dev --turbopack",
-    "build": "next build",
+    "build": "next build && node -e \"require('fs').writeFileSync('./out/.nojekyll', '')\"",
     "predeploy": "pnpm run build",
     "deploy": "gh-pages -d out"
   },
