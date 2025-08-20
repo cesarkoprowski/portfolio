@@ -10,7 +10,7 @@ export default function Home() {
       className="h-screen bg-cover bg-center flex justify-center items-center"
       style={{ backgroundImage: "url(./gradient_bg.png)" }}
     >
-      <Image src="./logo.png" alt="Logo" height={240} width={240} />
+      <Image src="./logo.png" alt="Logo" height={240} width={240} draggable="false"/>
     </div>
   );
 }

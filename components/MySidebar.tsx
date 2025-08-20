@@ -5,6 +5,7 @@ import { cn } from "@/lib/utils";
 import { Home, FolderGit } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const MySidebar = () => {
@@ -74,12 +75,16 @@ interface SidebarItemProps {
 }
 
 const SidebarItem = ({ icon, label, href, isOpen }: SidebarItemProps) => {
+  const pathname = usePathname();
+  const isActive = pathname === href;
+
   return (
     <Link
       href={href}
       className={cn(
         "flex items-center rounded-lg text-base transition-colors hover:bg-white/4",
-        "h-14"
+        "h-14",
+        isActive && "bg-white/5"
       )}
     >
       <div className="w-[54px] flex justify-center items-center">{icon}</div>
