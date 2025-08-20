@@ -13,7 +13,7 @@ const MySidebar = () => {
   return (
     <aside
       className={cn(
-        "fixed left-4 top-1/2 -translate-y-1/2 z-50 h-[94vh] rounded-2xl p-1 transition-all duration-300",
+        "fixed left-[2vh] top-1/2 -translate-y-1/2 z-50 h-[96vh] rounded-2xl p-1 transition-all duration-300",
         "bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg",
         isOpen ? "w-[250px]" : "w-[65px]"
       )}
@@ -26,7 +26,7 @@ const MySidebar = () => {
             onClick={() => setIsOpen(!isOpen)}
             className={cn(
               "text-white cursor-pointer transition-all duration-300 hover:bg-transparent",
-              isOpen && "bg-cover bg-center bg-no-repeat rounded-md w-27"
+              isOpen && "bg-cover bg-center bg-no-repeat rounded-md w-32"
             )}
             style={{
               ...(isOpen && {
