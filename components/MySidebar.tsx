@@ -2,14 +2,19 @@
 
 import { useState } from "react";
 import { cn } from "@/lib/utils";
-import { Home, FolderGit } from "lucide-react";
+import { Sparkle, Flag, Home, FolderGit } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const MySidebar = () => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(() => {
+    if (typeof window !== "undefined") {
+      return localStorage.getItem("sidebar-open") === "true";
+    }
+    return false;
+  });
 
   return (
     <aside
@@ -48,7 +53,7 @@ const MySidebar = () => {
           </Button>
         </div>
 
-        <nav className="flex flex-col gap-2 text-white font-semibold">
+        <nav className="flex flex-col gap-2 text-white font-medium">
           <SidebarItem
             icon={<Home size={20} />}
             label="Home"
@@ -58,7 +63,19 @@ const MySidebar = () => {
           <SidebarItem
             icon={<FolderGit size={20} />}
             label="Projects"
-            href="/config"
+            href="/projects"
+            isOpen={isOpen}
+          />
+          <SidebarItem
+            icon={<Flag size={20} />}
+            label="Milestones"
+            href="/milestones"
+            isOpen={isOpen}
+          />
+          <SidebarItem
+            icon={<Sparkle size={20} />}
+            label="Highlights"
+            href="/highlights"
             isOpen={isOpen}
           />
         </nav>
