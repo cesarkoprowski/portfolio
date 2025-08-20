@@ -13,7 +13,7 @@ const MySidebar = () => {
   return (
     <aside
       className={cn(
-        "fixed left-4 top-1/2 -translate-y-1/2 z-50 h-[97vh] rounded-2xl p-1 transition-all duration-300",
+        "fixed left-4 top-1/2 -translate-y-1/2 z-50 h-[94vh] rounded-2xl p-1 transition-all duration-300",
         "bg-white/5 backdrop-blur-xl border border-white/10 shadow-lg",
         isOpen ? "w-[250px]" : "w-[65px]"
       )}
