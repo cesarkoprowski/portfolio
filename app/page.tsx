@@ -13,7 +13,7 @@ export default function Home() {
           {/* Coluna de Texto */}
           <div className="w-250">
             <h1 className="flex items-center">
-              <span className="text-white text-6xl pr-4">I'm</span>
+              <span className="text-white text-6xl pr-4">I&apos;m</span>
               <span
                 className="
                   text-6xl font-medium
