@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { cn } from "@/lib/utils";
 import { Sparkle, Flag, Home, FolderGit } from "lucide-react";
 import { Button } from "@/components/ui/button";
@@ -9,12 +9,23 @@ import { usePathname } from "next/navigation";
 import Image from "next/image";
 
 const MySidebar = () => {
-  const [isOpen, setIsOpen] = useState(() => {
-    if (typeof window !== "undefined") {
-      return localStorage.getItem("sidebar-open") === "true";
-    }
-    return false;
-  });
+  const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const savedState = localStorage.getItem("sidebar-open") === "true";
+    setIsOpen(savedState);
+  }, []);
+
+  useEffect(() => {
+    localStorage.setItem("sidebar-open", String(isOpen));
+  }, [isOpen]);
+
+  // const [isOpen, setIsOpen] = useState(() => {
+  //   if (typeof window !== "undefined") {
+  //     return localStorage.getItem("sidebar-open") === "true";
+  //   }
+  //   return false;
+  // });
 
   return (
     <aside
@@ -45,8 +56,8 @@ const MySidebar = () => {
                 src="./simple_logo.png"
                 alt="Logo"
                 className="w-6 h-6 object-contain"
-                width={10}
-                height={10}
+                width={24}
+                height={24}
                 draggable={false}
               />
             )}

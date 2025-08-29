@@ -21,9 +21,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${outfit.variable} ${outfit.variable} antialiased`}>
+      <body
+        className={`${outfit.variable} antialiased [--sidebar-width:65px] [--main-padding-y:4vh]`}
+      >
         <MySidebar />
-        <main className="relative min-h-screen">{children}</main>
+        <main>{children}</main>
       </body>
     </html>
   );
