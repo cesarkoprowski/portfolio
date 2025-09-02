@@ -7,12 +7,12 @@ export default function PageWrapper({
 }) {
   return (
     <div
-      className="relative min-h-screen bg-cover bg-center"
+      className="relative min-h-screen bg-cover bg-center flex items-center"
       style={{ backgroundImage: `url(${background})` }}
     >
-      <div className="pl-[calc(var(--sidebar-width)+4vh)] pr-[4vh] py-[var(--main-padding-y)]">
+      <div className="w-full pl-[calc(var(--sidebar-width)+4vh)] pr-[4vh] py-[var(--main-padding-y)]">
         {children}
-      </div>{" "}
+      </div>
     </div>
   );
 }
