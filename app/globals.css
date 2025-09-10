@@ -137,3 +137,14 @@
 .animate-text-gradient {
   animation: gradient-animation 14s ease infinite;
 }
+
+/* Infinite carousel animation */
+@keyframes scroll {
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 40s linear infinite;
+}

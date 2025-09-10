@@ -1,4 +1,5 @@
 import Image from "next/image";
+import InfiniteLogoCarousel from "@/components/InfiniteLogoCarousel";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import PageWrapper from "@/components/PageWrapper";
@@ -82,6 +83,10 @@ export default function Home() {
             priority
           />
         </div>
+      </div>
+
+      <div className="w-full max-w-6xl mx-auto mt-3">
+        <InfiniteLogoCarousel />
       </div>
     </PageWrapper>
   );
