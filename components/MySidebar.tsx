@@ -20,13 +20,6 @@ const MySidebar = () => {
     localStorage.setItem("sidebar-open", String(isOpen));
   }, [isOpen]);
 
-  // const [isOpen, setIsOpen] = useState(() => {
-  //   if (typeof window !== "undefined") {
-  //     return localStorage.getItem("sidebar-open") === "true";
-  //   }
-  //   return false;
-  // });
-
   return (
     <aside
       className={cn(
@@ -72,6 +65,12 @@ const MySidebar = () => {
             isOpen={isOpen}
           />
           <SidebarItem
+            icon={<Sparkle size={20} />}
+            label="Skills"
+            href="/skills"
+            isOpen={isOpen}
+          />
+          <SidebarItem
             icon={<FolderGit size={20} />}
             label="Projects"
             href="/projects"
@@ -79,12 +78,6 @@ const MySidebar = () => {
           />
           <SidebarItem
             icon={<Flag size={20} />}
-            label="Milestones"
-            href="/milestones"
-            isOpen={isOpen}
-          />
-          <SidebarItem
-            icon={<Sparkle size={20} />}
             label="Highlights"
             href="/highlights"
             isOpen={isOpen}

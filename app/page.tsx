@@ -1,5 +1,4 @@
 import Image from "next/image";
-import InfiniteLogoCarousel from "@/components/InfiniteLogoCarousel";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import PageWrapper from "@/components/PageWrapper";
@@ -10,17 +9,15 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <PageWrapper background="./gradient_bg.png">
-      <div className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl mx-auto text-center md:text-left">
+    <PageWrapper background="./homepage_bg.png">
+      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto max-h-100 text-center md:text-left">
         {/* Coluna de Texto */}
         <div className="w-full md:w-auto lg:pl-3">
-          <h1 className="flex flex-row items-center justify-center md:justify-start">
-            <span className="text-white text-3xl sm:text-4xl md:text-4xl lg:text-6xl pr-2">
-              I&apos;m
-            </span>
+          <h1 className="flex flex-row items-center justify-center md:justify-start text-2xl sm:text-3xl md:text-4xl lg:text-6xl">
+            <span className="text-white pr-2">I&apos;m</span>
             <span
               className="
-                  text-3xl sm:text-4xl md:text-4xl lg:text-6xl font-medium
+                  font-medium
                   bg-gradient-to-r from-cyan-500 via-emerald-500 to-cyan-500
                   bg-clip-text text-transparent
                   bg-[size:400%_auto]
@@ -29,9 +26,7 @@ export default function Home() {
             >
               Cesar Koprowski
             </span>
-            <span className="text-white text-3xl sm:text-4xl md:text-4xl lg:text-6xl">
-              .
-            </span>
+            <span className="text-white">.</span>
           </h1>
           <h2 className="text-white text-2xl sm:text-3xl md:text-4xl lg:text-5xl pt-4">
             A Full-Stack Developer
@@ -83,10 +78,6 @@ export default function Home() {
             priority
           />
         </div>
-      </div>
-
-      <div className="w-full max-w-6xl mx-auto mt-3">
-        <InfiniteLogoCarousel />
       </div>
     </PageWrapper>
   );

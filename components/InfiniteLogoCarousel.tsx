@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { cn } from "@/lib/utils";
 
 type Logo = {
   src: string;
@@ -48,18 +49,37 @@ const LOGOS_LIST: Logo[] = [
   },
 ];
 
-const InfiniteLogoCarousel = () => {
+interface InfiniteLogoCarouselProps {
+  reverse?: boolean;
+}
+
+const InfiniteLogoCarousel = ({
+  reverse = false,
+}: InfiniteLogoCarouselProps) => {
+  const extendedLogos = [
+    ...LOGOS_LIST,
+    ...LOGOS_LIST,
+    ...LOGOS_LIST,
+    ...LOGOS_LIST,
+  ];
+
   return (
     <div className="w-full overflow-hidden [mask-image:linear-gradient(to_right,transparent,black_10%,black_90%,transparent)]">
-      <div className="flex w-max animate-scroll hover:[animation-play-state:paused]">
-        {[...LOGOS_LIST, ...LOGOS_LIST].map((logo, index) => (
-          <div key={index} className="flex-shrink-0 mx-8">
+      <div
+        className={cn(
+          "flex w-max animate-scroll hover:[animation-play-state:paused]",
+          reverse ? "animate-scroll-reverse" : "animate-scroll"
+        )}
+      >
+        {extendedLogos.map((logo, index) => (
+          <div key={index} className="flex-shrink-0 mx-2">
             <Image
               src={logo.src}
               alt={logo.alt}
               width={100}
               height={40}
-              className="h-16 w-auto object-contain"
+              draggable={false}
+              className="h-16 w-auto object-contain bg-white/20 rounded-xl p-2"
             />
           </div>
         ))}
