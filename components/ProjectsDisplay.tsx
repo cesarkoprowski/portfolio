@@ -1,4 +1,4 @@
-import { ProjectCard, Project } from "./ProjectCard"; // Importando do novo arquivo
+import { ProjectCard, Project } from "./ProjectCard";
 
 const projects: Project[] = [
   {

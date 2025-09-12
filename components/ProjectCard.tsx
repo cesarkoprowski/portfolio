@@ -5,7 +5,7 @@ import ProjectDescription from "./ProjectDescription";
 import { ExternalLink, Github } from "lucide-react";
 import Image from "next/image";
 
-interface Project {
+export interface Project {
   id: number;
   title: string;
   description: string;

@@ -2,7 +2,12 @@
 
 import React, { useState } from "react";
 
-const ProjectDescription = ({ text, maxLength }) => {
+interface ProjectDescriptionProps {
+  text: string;
+  maxLength: number;
+}
+
+const ProjectDescription = ({ text, maxLength }: ProjectDescriptionProps) => {
   const [isExpanded, setIsExpanded] = useState(false);
 
   if (text.length <= maxLength) {
