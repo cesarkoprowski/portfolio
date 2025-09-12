@@ -10,7 +10,7 @@ export const metadata = {
 export default function Home() {
   return (
     <PageWrapper background="./homepage_bg.png">
-      <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto max-h-100 text-center md:text-left">
+      <div className="flex flex-col sm:flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto max-h-100 text-center md:text-left">
         {/* Coluna de Texto */}
         <div className="w-full md:w-auto lg:pl-3">
           <h1 className="flex flex-row items-center justify-center md:justify-start text-2xl sm:text-3xl md:text-4xl lg:text-6xl">

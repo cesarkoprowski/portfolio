@@ -1,13 +1,16 @@
+import PageWrapper from "@/components/PageWrapper";
+import { ProjectsDisplay } from "@/components/ProjectsDisplay";
+
 export const metadata = {
-  title: "Cesk.",
+  title: "Cesk. | Projetos",
 };
 
 export default function Projects() {
   return (
-    <div className="h-screen bg-cover bg-center flex justify-center items-center bg-black">
-      <div>
-        <h1 className="text-white text-2xl">Coming soon...</h1>
+    <PageWrapper background="./projectspage_bg.png">
+      <div className="flex items-center justify-center w-full">
+        <ProjectsDisplay />
       </div>
-    </div>
+    </PageWrapper>
   );
 }
