@@ -6,7 +6,7 @@ const projects: Project[] = [
     title: "ZooMind",
     description:
       "The proposal focuses on frontend development, with an emphasis on applying backend logic using JavaScript and data flow from a decision tree structure.",
-    image: "/zoomind_logo.png",
+    image: "./zoomind_logo.png",
     tags: ["Javascript", "HTML", "CSS"],
     link: "https://cesarkoprowski.github.io/decision-tree/",
     github: "https://github.com/cesarkoprowski/decision-tree",
@@ -16,7 +16,7 @@ const projects: Project[] = [
     title: "Linux Controller",
     description:
       "A Python-based project that provides an intuitive graphical interface to simplify the execution of Linux commands.",
-    image: "/linuxcontroller_sample.png",
+    image: "./linuxcontroller_sample.png",
     tags: ["Python", "Linux"],
     github: "https://github.com/cesarkoprowski/linux-controller",
   },
@@ -25,7 +25,7 @@ const projects: Project[] = [
     title: "POQG",
     description:
       "A simple e-commerce platform for buying and selling Pokémon TCG cards. Built with PokeAPI for real-time card data.",
-    image: "/poqg_logo.png",
+    image: "./poqg_logo.png",
     tags: ["Vue.js", "TypeScript", "Python", "MySQL"],
     link: "disabled",
     github: "https://github.com/bytecortex/pokemon-tcg",
