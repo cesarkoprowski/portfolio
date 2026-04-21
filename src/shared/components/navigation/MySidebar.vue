@@ -7,13 +7,20 @@
     ]"
   >
     <div class="flex flex-col h-full">
-      <div class="pr-[9px] my-4 flex justify-end">
+      <div
+        :class="[
+          'my-4 flex',
+          isOpen ? 'pr-[9px] justify-end' : 'justify-center',
+        ]"
+      >
         <Button
           size="icon"
           variant="ghost"
           :class="[
             'text-white cursor-pointer transition-all duration-300 hover:bg-transparent border-none bg-transparent',
-            isOpen ? 'bg-cover bg-center bg-no-repeat rounded-md w-32 h-8' : 'w-8 h-8',
+            isOpen
+              ? 'bg-cover bg-center bg-no-repeat rounded-md w-32 h-8'
+              : 'w-8 h-8',
           ]"
           :style="isOpen ? { backgroundImage: 'url(/logo.png)' } : undefined"
           @click="isOpen = !isOpen"
