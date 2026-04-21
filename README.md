@@ -1,23 +1,41 @@
 # Portfolio by Cesk.
 
-This project was built with a modern front-end stack, serving as a personal challenge to expand my expertise beyond my core back-end skills.
+This repository was migrated from Next.js/React to a Vue.js structure using Vue 3 + Vite.
 
-## Tech Stack & Architecture
+## Tech Stack
 
-* **Framework:** **[Next.js](https://nextjs.org/)**
-    * A powerful React framework used for Static Site Generation (SSG), which pre-renders the entire website into static HTML, CSS, and JavaScript files for lightning-fast load times.
+- **Framework:** [Vue 3](https://vuejs.org/)
+- **Router:** [Vue Router](https://router.vuejs.org/)
+- **Build Tool:** [Vite](https://vite.dev/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Icons:** [Lucide Vue Next](https://lucide.dev/)
+- **Package Manager:** [pnpm](https://pnpm.io/)
 
-* **UI Library:** **[React](https://react.dev/)**
-    * The fundamental library for building the user interface with a component-based architecture.
+## Scripts
 
-* **Styling:** **[Tailwind CSS](https://tailwindcss.com/)**
-    * A utility-first CSS framework that allows for rapid development of custom designs without leaving the HTML. All styles are co-located with the components for better maintainability.
+- `pnpm dev` - Start local development server
+- `pnpm build` - Type-check and build production assets into `dist/`
+- `pnpm preview` - Preview production build locally
+- `pnpm deploy` - Deploy `dist/` via GitHub Pages
 
-* **Components:** **[shadcn/ui](https://ui.shadcn.com/)**
-    * A collection of beautifully designed, accessible, and unstyled components. Unlike traditional component libraries, these are not installed as a dependency. Instead, they are copied into the codebase, allowing for full control and ownership over styling and behavior.
+## Project Architecture
 
-* **Package Manager:** **[pnpm](https://pnpm.io/)**
-    * A fast and disk-space-efficient package manager. It uses a content-addressable store to avoid duplicating packages, resulting in faster installation times and smaller `node_modules` directories.
-
-* **Development Server:** **[Turbopack](https://turbo.build/pack)**
-    * An incremental bundler written in Rust, used via the `next dev --turbopack` command to provide a significantly faster development experience compared to Webpack.
+```text
+src/
+  app/
+    App.vue
+    router/
+  modules/
+    home/
+    skills/
+      components/
+    projects/
+      components/
+      data/
+    highlights/
+  shared/
+    components/
+      layout/
+      navigation/
+    styles/
+```
