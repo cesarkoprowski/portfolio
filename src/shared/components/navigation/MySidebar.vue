@@ -58,7 +58,7 @@
 <script setup lang="ts">
 import { onMounted, ref, watch } from "vue";
 import { RouterLink, useRoute } from "vue-router";
-import { Flag, FolderGit2, House, Sparkles } from "lucide-vue-next";
+import { Award, Code2, FolderKanban, House } from "lucide-vue-next";
 import { Button } from "@/shared/components/ui/button";
 
 const route = useRoute();
@@ -66,9 +66,9 @@ const isOpen = ref(false);
 
 const items = [
   { label: "Home", href: "/", icon: House },
-  { label: "Skills", href: "/skills", icon: Sparkles },
-  { label: "Projects", href: "/projects", icon: FolderGit2 },
-  { label: "Highlights", href: "/highlights", icon: Flag },
+  { label: "Skills", href: "/skills", icon: Code2 },
+  { label: "Projects", href: "/projects", icon: FolderKanban },
+  { label: "Highlights", href: "/highlights", icon: Award },
 ];
 
 onMounted(() => {
