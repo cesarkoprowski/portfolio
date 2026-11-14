@@ -1,0 +1,11 @@
+services:
+  cesk:
+    build: .
+    container_name: portfolio-cesk
+    restart: unless-stopped
+    networks:
+      - proxy_manager
+
+networks:
+  proxy_manager:
+    external: true

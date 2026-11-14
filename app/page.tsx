@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function Home() {
   return (
-    <PageWrapper background="./homepage_bg.png">
+    <PageWrapper background="/homepage_bg.png">
       <div className="flex flex-col sm:flex-col md:flex-row items-center justify-center w-full max-w-6xl mx-auto max-h-100 text-center md:text-left">
         {/* Coluna de Texto */}
         <div className="w-full md:w-auto lg:pl-3">

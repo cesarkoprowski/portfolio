@@ -40,13 +40,13 @@ const MySidebar = () => {
             )}
             style={{
               ...(isOpen && {
-                backgroundImage: `url(./logo.png)`,
+                backgroundImage: `url(/logo.png)`,
               }),
             }}
           >
             {!isOpen && (
               <Image
-                src="./simple_logo.png"
+                src="/simple_logo.png"
                 alt="Logo"
                 className="w-6 h-6 object-contain"
                 width={24}

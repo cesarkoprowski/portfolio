@@ -7,7 +7,7 @@ export const metadata = {
 
 export default function Projects() {
   return (
-    <PageWrapper background="./projectspage_bg.png">
+    <PageWrapper background="/projectspage_bg.png">
       <div className="flex items-center justify-center w-full">
         <ProjectsDisplay />
       </div>
